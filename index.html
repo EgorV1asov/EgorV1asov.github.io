@@ -231,6 +231,34 @@
             }
         }
     </script>
-    <h2><button onclick="window.location.href = 'index.html';">Назад</button></h2>
+
+<h1>Задача с переменными</h1>
+<p>Объявите две переменные: <code>admin</code> и <code>name</code>. Запишите в <code>name</code> строку свое имя, например "Егор". Скопируйте значение из <code>name</code> в <code>admin</code>. Выведите <code>admin</code> (должно вывести «Егор»).</p>
+<button onclick="showAdmin()">Выполнить задачу</button>
+<div id="adminOutput"></div>
+
+<script>
+    function showAdmin() {
+        // Объявление переменных
+        var admin;
+        var name = "Егор ";
+
+        // Копирование значения из переменной name в переменную admin
+        admin = name;
+
+        // Вывод значения переменной admin
+        var adminOutput = document.getElementById('adminOutput');
+        adminOutput.innerText = "Значение переменной admin: " + admin;
+    }
+</script>
+
+
+   
+
+
+
+    
 </body>
+
+
 </html>
